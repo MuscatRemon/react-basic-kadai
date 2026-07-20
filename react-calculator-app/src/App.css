@@ -1,0 +1,28 @@
+button {
+  background-color: lightblue;
+  cursor: pointer;
+  height: 32px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.wrapper {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.calculator-container {
+  background-color: whitesmoke;
+  border: 1px solid gray;
+  height: 24px;
+  margin-bottom: 8px;
+}
+
+/* ボタンのグリッドレイアウト設定 */
+.button-grid {
+  display: grid; /* グリッドレイアウト */
+  grid-template-columns: repeat(4, 60px); /* 列の定義: 4列、各列の幅60px */
+  gap: 8px; /* グリッド間の隙間 */
+}
